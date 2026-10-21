@@ -79,7 +79,7 @@ export class Rectangle implements Figure {
   }
 
   getArea(): number {
-    return this.width * this.height;
+    return Math.trunc(this.width * this.height * 100) / 100;
   }
 }
 
